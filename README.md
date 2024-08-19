@@ -12,48 +12,37 @@ When the service comes up, it listens to port 8823. The emulated machine boots u
 
 ```plain
 
+LDRBIOS3 v1.07 27-Jun-2010
 
-Connected to the Altair 8800 (Z80) simulator Serial Input Output SIO device, line 0
-
-
-64K CP/M Version 2.2 (SIMH ALTAIR 8800, BIOS V1.23, 2 HD, 20-Oct-02)
-
-A>mpm
-
-MP/M II V2.1 Loader
-Copyright (C) 1981, Digital Research
-Nmb of consoles     =  4
-Breakpoint RST #    =  6
-Memory Segment Table:
-SYSTEM  DAT  FE00H  0100H
-TMPD    DAT  FD00H  0100H
-USERSYS STK  FB00H  0200H
-XIOSJMP TBL  FA00H  0100H
-RESBDOS SPR  EE00H  0C00H
-XDOS    SPR  CC00H  2200H
-BNKXIOS SPR  BF00H  0D00H
-BNKBDOS SPR  9C00H  2300H
-BNKXDOS SPR  9A00H  0200H
-TMP     SPR  9600H  0400H
-LCKLSTS DAT  9300H  0300H
-CONSOLE DAT  8F00H  0400H
--------------------------
-MP/M II Sys  8F00H  7100H  Bank 0
-Memseg  Usr  0000H  B000H  Bank 1
-Memseg  Usr  0000H  B000H  Bank 2
-Memseg  Usr  0000H  B000H  Bank 3
-Memseg  Usr  0000H  B000H  Bank 4
-Memseg  Usr  0000H  B000H  Bank 5
-Memseg  Usr  0000H  B000H  Bank 6
-Memseg  Usr  0000H  B000H  Bank 7
-
-MP/M XIOS (SIMH ALTAIR 8800, V1.11, 2 HD, Banked, 20-Oct-02)
-
-
-MP/M II V2.1
+CP/M V3.0 Loader V1.00 18-Jan-2002
 Copyright (C) 1982, Digital Research
 
-0A>
+ BNKBIOS3 SPR  ED00  0A00
+ BNKBIOS3 SPR  AD00  1300
+ RESBDOS3 SPR  E700  0600
+ BNKBDOS3 SPR  7F00  2E00
+ 
+ 57K TPA
+
+BIOS3 Banked for SIMH Altair V-1.27, 4 HD, 02-May-2009
+
+A>z3plus
+
+                             ---  Z3PLUS  ---
+                    The Z-System for CP/M PLUS (CP/M 3)
+                  Vers. 1.02    (c) 1988 Bridger Mitchell
+                     [ TPA: 0100 - CA05        50.50k ]
+
+
+
+TCSELECT, Version 1.2
+
+Selected Terminal is: VT100 DEC               
+
+ZCPR3 TERMINAL DESCRIPTOR LOADED
+
+A0:COMMANDS>
+
 ```
 
 At this point, you are in the MP/M prompt. It shows the current user number (from 0 to 15) and the currently active drive. Up to four users can connect at the same time, and will automatically be directed to different user areas.
