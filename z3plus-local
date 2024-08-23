@@ -1,0 +1,28 @@
+d tracks[0-7] 254
+; For a period-accurate clock speed
+; d clock 4000
+attach dsk0 z3plus.dsk
+attach dsk1 z3plusb.dsk
+attach dsk2 supercalc.dsk
+attach dsk3 dbase.dsk
+attach dsk4 wordstar.dsk
+attach dsk5 multiplan.dsk
+attach dsk6 games.dsk
+attach dsk7 app.dsk
+attach hdsk0 i.dsk
+attach hdsk1 j.dsk
+reset cpu
+d common c000
+set cpu 64k
+set cpu banked
+set cpu itrap
+set cpu z80
+set cpu altairrom
+; set sio nosleep
+set sio all
+; Allow the machine to sleep (1ms) when serial idles
+set sio 1000
+; Terminals connects on port 8823
+; attach sio 8823
+boot dsk0
+; bye
