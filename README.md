@@ -8,7 +8,7 @@ To start the service locally, run:
 docker run -p 8823:8823 rbanffy/altair-z3plus
 ```
 
-When the service comes up, it listens to port 8823. The emulated machine boots under CP/M Plus. In order to start MP/M, the first user to connect (running `telnet localhost 8823`) needs to run the MPM.COM program, which loads and starts the MP/M II environment:
+When the service comes up, it listens to port 8823. The emulated machine boots under CP/M Plus and the user needs to start Z3PLUS manually:
 
 ```plain
 
@@ -45,7 +45,7 @@ A0:COMMANDS>
 
 ```
 
-At this point, you are in the MP/M prompt. It shows the current user number (from 0 to 15) and the currently active drive. Up to four users can connect at the same time, and will automatically be directed to different user areas.
+At this point, you are in the MP/M prompt. It shows the active drive (A), current user number (from 0 to 15) and the label of the disk.
 
 ## Contents of the Docker image
 
