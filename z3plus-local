@@ -23,6 +23,6 @@ set sio all
 ; Allow the machine to sleep (1ms) when serial idles
 set sio 1000
 ; Terminals connects on port 8823
-; attach sio 8823
+attach sio 8823
 boot dsk0
 ; bye
